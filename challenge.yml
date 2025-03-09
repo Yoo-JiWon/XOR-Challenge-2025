@@ -1,0 +1,58 @@
+# 1. 문제 정보
+name: "Yes or NO?"
+author: "yoo-j"
+category: Pwnable, cryptography
+description: 뭐? 키 값을 찾아서 복호화를 하라고? 키 값을 어디 적어놨더라..
+
+# 2. 문제 점수
+# 2-1. 정적 문제 점수
+value: 200
+type: standard
+
+# 2-2. 동적 문제 점수
+# value: 0
+# type: dynamic
+# extra:
+#     initial: 500
+#     decay: 5
+#     minimum: 50
+
+
+
+# 4. 플래그
+flags:
+    # A static case sensitive flag
+    - HACK{N0w_yOU_CAN_u53_tH3_pWnT00l!!!}
+    # A static case sensitive flag created with a dictionary
+    - {
+        type: "static",
+        content: "flag{wat}",
+    }
+    # A static case insensitive flag
+    - {
+        type: "static",
+        content: "flag{wat}",
+        data: "case_insensitive",
+    }
+    # A regex case insensitive flag
+    - {
+        type: "regex",
+        content: "(.*)STUFF(.*)",
+        data: "case_insensitive",
+    }
+
+
+# 5. 태그
+tags:
+    - pwnable
+    - cryptography
+    - Python
+
+# 6. 파일
+files:
+
+
+# 9. 문제 공개 여부
+state: visible
+
+version: "0.1"

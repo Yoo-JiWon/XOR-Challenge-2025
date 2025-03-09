@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  iamwldnjs-nc-sample:
+    build: .
+    restart: always
+    image: "iamwldnjs-nc-sample"
+    ports: 
+      - "7201:7201"
